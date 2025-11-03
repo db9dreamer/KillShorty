@@ -8,4 +8,4 @@ To install the extension, follow these steps:
 3. Enable "Developer mode" (usually found in the top right corner).
 4. Click on "Load unpacked" and select the directory where you cloned or downloaded the repository.
 
-1. The extension should now be installed and active.
+The extension should now be installed and active.
