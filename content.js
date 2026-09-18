@@ -1,5 +1,5 @@
 console.log("in GetShorty");
-var firstPass = true;
+// var firstPass = true;
 
 function pruneShorts() {
 	const nodes = document.querySelectorAll("[is-shorts]");
