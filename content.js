@@ -1,8 +1,8 @@
-console.log("in GetShorty");
+console.log("In GetShorty");
 // var firstPass = true;
 
-function pruneShorts() {
-	const nodes = document.querySelectorAll("[is-shorts]");
+function pruneNodes(filter) {
+	const nodes = document.querySelectorAll(filter);
 	nodes.forEach(node => {
 		//console.log(node);
 		node.outerHTML = '';
@@ -19,10 +19,11 @@ function pruneMostRelevant() {
 
 const observer = new MutationObserver(() => {
 	//if (firstPass) {
-		pruneShorts();
-		pruneMostRelevant();
-		//firstPass = false;
-		//observer.disconnect();
+	pruneNodes("[is-shorts]");
+	pruneNodes("[title='Shorts']");
+	pruneMostRelevant();
+	//firstPass = false;
+	//observer.disconnect();
 	//}
 });
 
